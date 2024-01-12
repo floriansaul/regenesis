@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { Tile } from "./tile";
 
-const GRIDSIZE = 5;
+const GRIDSIZE = 6;
 
 export function Game() {
   const g: Record<string, string> = {};
