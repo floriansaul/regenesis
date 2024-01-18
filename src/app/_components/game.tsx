@@ -16,7 +16,7 @@ export function Game() {
   const [grid, setGrid] = useState(g);
 
   const handleTileClick = (row: number, col: number) => {
-    console.log(row, col);
+    // console.log(row, col);
 
     const updatedGrid = {
       ...grid,
@@ -33,7 +33,7 @@ export function Game() {
     setGrid(updatedGrid);
   };
 
-  console.log(grid);
+  // console.log(grid);
 
   return (
     <div className="container w-full sm:w-1/2 aspect-square">
