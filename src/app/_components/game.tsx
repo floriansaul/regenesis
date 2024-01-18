@@ -36,11 +36,11 @@ export function Game() {
   console.log(grid);
 
   return (
-    <div>
+    <div className="container w-full sm:w-1/2 aspect-square">
       {Array(GRIDSIZE)
         .fill(0)
         .map((_, r) => (
-          <div key={r}>
+          <div className="container w-full h-1/6" key={r}>
             {Array(GRIDSIZE)
               .fill(0)
               .map((_, c) => (

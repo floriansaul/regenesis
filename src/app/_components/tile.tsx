@@ -12,7 +12,7 @@ export function Tile(props: { handleTileClick: () => void; color: string }) {
   return (
     <button
       type="button"
-      className={`{} rounded-full px-6 py-6 sm:px-10 sm:py-10 font-semibold transition ${css}`}
+      className={`rounded-full p-2 h-full w-1/6 ${css}`}
       onClick={props.handleTileClick}
     >
       

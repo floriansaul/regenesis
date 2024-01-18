@@ -22,7 +22,10 @@ export default async function Home() {
             I want to be red
           </h1>
         </div>
-        <div className="flex flex-col items-center gap-2">
+        <Game />
+
+
+
           {/* <p className="text-2xl text-white">
             {hello ? hello.greeting : "Loading tRPC query..."}
           </p> */}
@@ -43,11 +46,6 @@ export default async function Home() {
               alt="Screenshot of the dashboard project showing mobile version"
             />
           </div> */}
-
-          <div>
-            <Game />
-          </div>
-
           {/* <div className="flex flex-col items-center justify-center gap-4">
             <p className="text-center text-2xl text-white">
               {session && <span>Logged in as {session.user?.name}</span>}
@@ -59,7 +57,6 @@ export default async function Home() {
               {session ? "Sign out" : "Sign in"}
             </Link>
           </div> */}
-        </div>
         {/* <CrudShowcase /> */}
       </div>
     </main>
