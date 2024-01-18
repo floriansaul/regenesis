@@ -41,7 +41,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-# PWA
-sw.*
-workbox-*
-swe-worker-*
+# PWA not sure if I need this?
+# sw.* 
+# workbox-*
+# swe-worker-*
