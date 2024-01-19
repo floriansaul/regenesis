@@ -9,7 +9,7 @@ import type { Metadata, Viewport } from "next";
 const APP_NAME = "Regenesis";
 const APP_DEFAULT_TITLE = "regenesis";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
-const APP_DESCRIPTION = "Best PWA app in the world!";
+const APP_DESCRIPTION = "9/10 Kodys can't figure out this simple game!";
 
 export const metadata = {
   applicationName: APP_NAME,

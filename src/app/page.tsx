@@ -7,8 +7,11 @@ import { api } from "~/trpc/server";
 import Image from "next/image";
 import { Game } from "./_components/game";
 
+// Workaround for dumb trpc thing https://github.com/t3-oss/create-t3-app/pull/1567#issuecomment-1748418796
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
-  // const hello = await api.post.hello.query({ text: "from tRPC" });
+  const hello = await api.post.hello.query({ text: "from tRPC" });
   const session = await getServerAuthSession();
 
   return (
@@ -26,9 +29,9 @@ export default async function Home() {
 
 
 
-          {/* <p className="text-2xl text-white">
+          <p className="text-2xl text-white">
             {hello ? hello.greeting : "Loading tRPC query..."}
-          </p> */}
+          </p>
 
           {/* <div>
             <Image
